@@ -1,4 +1,4 @@
-package com.example.newsappcompose.models.presentation
+package com.example.newsappcompose.model.presentation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.FavoriteBorder

@@ -1,4 +1,4 @@
-package com.example.newsappcompose.presentation.screens
+package com.example.newsappcompose.presentation.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -11,17 +11,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
+import com.example.newsappcompose.presentation.viewmodel.FavouriteScreenViewModel
 
 @Composable
-fun SettingsScreen() {
+fun FavouriteScreen(viewModel: FavouriteScreenViewModel) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color.Blue)
+            .background(color = Color.Magenta)
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
-            text = "Settings Screen",
+            text = "Favourite Screen",
             style = MaterialTheme.typography.titleLarge,
             color = Color.White,
             modifier = Modifier.align(Alignment.CenterHorizontally),

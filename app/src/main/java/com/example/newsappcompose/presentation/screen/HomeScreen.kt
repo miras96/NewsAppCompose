@@ -1,4 +1,4 @@
-package com.example.newsappcompose.presentation.screens
+package com.example.newsappcompose.presentation.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -11,9 +11,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
+import com.example.newsappcompose.presentation.viewmodel.HomeScreenViewModel
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(viewModel: HomeScreenViewModel) {
     Column(
         modifier = Modifier
             .fillMaxSize()

@@ -1,4 +1,4 @@
-package com.example.newsappcompose.presentation.widgets
+package com.example.newsappcompose.presentation.widget
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.example.newsappcompose.models.presentation.Destinations
+import com.example.newsappcompose.model.presentation.Destinations
 
 @Composable
 fun BottomBarWidget(

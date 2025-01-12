@@ -9,7 +9,15 @@ data class NewsRemote(
     val articles: ArrayList<ArticleRemote>,
     val code: String? = null,
     val message: String? = null
-)
+) {
+    companion object {
+        enum class Status(val value: String) {
+            OK("ok"), ERROR("error")
+        }
+        fun success() =  Status.OK.value
+        fun error() = Status.ERROR.value
+    }
+}
 
 @Serializable
 data class ArticleRemote(
